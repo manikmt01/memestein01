@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>$MEMENSTEIN</title>
+</head>
+
+<body>
+  <img src="./images/4.png" usemap="#image-map" />
+  <audio src="./audio/bg.mp3" preload="auto" id="bgAudio"></audio>
+
+  <a href="#">
+    <div class="box" id="box1"></div>
+  </a>
+  <a href="https://t.me/memenstein" target="_blank">
+    <div class="box" id="box2"></div>
+  </a>
+  <a href="https://x.com/Memenstein__SOL" target="_blank">
+    <div class="box" id="box3"></div>
+  </a>
+  <a href="./page1.html">
+    <div class="box" id="box4"></div>
+  </a>
+
+  <map name="image-map">
+    <area id="area1" target="" alt="" title="" href="" coords="443,189,748,440" shape="rect" />
+    <area id="area2" target="" alt="" title="" href="" coords="825,183,1110,442" shape="rect" />
+    <area id="area3" target="" alt="" title="" href="" coords="1182,170,1497,444" shape="rect" />
+    <area id="area4" target="" alt="" title="" href="" coords="1524,94,1785,275" shape="rect" />
+  </map>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  <script src="./js/rwdImageMaps.js"></script>
+  <script>
+    $(document).ready(function (e) {
+      $("img[usemap]").rwdImageMaps();
+    });
+  </script>
+  <script src="./js/app.js"></script>
+  <script>
+    const bgAudio = document.getElementById("bgAudio");
+    bgAudio.play();
+  </script>
+</body>
+
+</html>

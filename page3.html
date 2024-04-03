@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/page3.css" />
+  <style>
+    .box {
+      border: 1px solid rgb(255, 255, 255);
+    }
+  </style>
+  <title>$MEMENSTEIN</title>
+</head>
+
+<body class="">
+  <img src="./images/3.png" usemap="#image-map" />
+  <audio src="./audio/bg.mp3" preload="auto" id="bgAudio"></audio>
+
+  <div class="memes-wrap no-display" id="memeswrap">
+    <div class="img-wrap">
+      <img src="./images/POPCATTUBE.png" alt="" srcset="" />
+      <img src="./images/PEPETUBE.png" alt="" srcset="" />
+      <img src="./images/DOGTIF.png" alt="" srcset="" />
+      <img src="./images/SLERF.png" alt="" srcset="" />
+      <img src="./images/TREMP.png" alt="" srcset="" />
+    </div>
+  </div>
+
+  <h4 class="title">POPCATTUBE</h4>
+
+  <a href="#" class="box-link" onclick="showmeme(0)">
+    <div class="box" id="box1"></div>
+  </a>
+  <a href="#" class="box-link" onclick="showmeme(1)">
+    <div class="box" id="box2"></div>
+  </a>
+  <a href="#" class="box-link" onclick="showmeme(2)">
+    <div class="box" id="box3"></div>
+  </a>
+  <a href="#" class="box-link" onclick="showmeme(3)">
+    <div class="box" id="box4"></div>
+  </a>
+  <a href="#" class="box-link" onclick="showmeme(4)">
+    <div class="box" id="box5"></div>
+  </a>
+  <a href="#" class="box-link" onclick="shake()">
+    <div class="box" id="box6"></div>
+  </a>
+  <a href="./page4.html" class="box-link">
+    <div class="box" id="box7"></div>
+  </a>
+  <a href="./page4.html" class="box-link">
+    <div class="box" id="box8"></div>
+  </a>
+
+  <map name="image-map">
+    <area id="area1" target="" alt="POPCATTUBE" title="POPCATTUBE" href="" coords="108,478,242,643" shape="rect" />
+    <area id="area2" target="" alt="PEPETUBE" title="PEPETUBE" href="" coords="108,672,261,873" shape="rect" />
+    <area id="area3" target="" alt="DOGTIF" title="DOGTIF" href="" coords="1699,498,1889,785" shape="rect" />
+    <area id="area4" target="" alt="SLERF" title="SLERF" href="" coords="1531,432,1672,734" shape="rect" />
+    <area id="area5" target="" alt="TREMP" title="TREMP" href="" coords="1251,545,1451,712" shape="rect" />
+    <area id="area6" target="" alt="MEMESTEIN" title="MEMESTEIN" href="" coords="642,719,1314,917" shape="rect" />
+    <area id="area7" target="" alt="blue ball" title="blue ball" href="" coords="572,290,900,554" shape="rect" />
+    <area id="area8" target="" alt="blue ball" title="blue ball" href="" coords="1051,245,1337,543" shape="rect" />
+  </map>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  <script src="./js/rwdImageMaps.js"></script>
+  <script>
+    $(document).ready(function (e) {
+      $("img[usemap]").rwdImageMaps();
+    });
+  </script>
+  <script src="./js/app.js"></script>
+  <script src="./js/page3.js"></script>
+  <script>
+    const bgAudio = document.getElementById("bgAudio");
+    bgAudio.play();
+  </script>
+</body>
+
+</html>
